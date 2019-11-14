@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/domaci11.css">
+
+    <script>
+
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".nav").slideToggle(400);
+            });
+            $(window).resize(function () {
+                 if($(".hamburger").css("display") == "none")
+                 {
+                     $(".nav").css("display","block");
+                 }
+             })
+        })
+     </script>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+            <img src="Images/logo.jpg">
+                    <h1>--No strings attached--</h1>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+    </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Pocetna</a></li>
+                <li><a href="O nama.html">O nama</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+      
+            </ul>
+        </div>
+        <div class="vesti">
+            <div class="akcija">
+                <img src="Images/JohnnyCash.jpg" alt="JohnnyCashGitara">
+                
+                <h2>Akcija!</h2>
+                <h3>Replike gitare Johnny Casha dostupne u Guitar Shop Dane!</h3>
+            </div>
+            <div class="akcija">
+                    <img src="Images/Stimer.jpg" alt="Stimer">
+                   
+                    <h2>Novosti!</h2>
+                    <h3>Uz kupovinu bilo koje gitare dobijate besplatan stimer!</h3>
+                </div>
+        </div>
+        <div class="registracija">
+            <h3 id="registracija2">Registracija</h3>
+            <div id="registracija1">Email:<input type="email" name="Email" style="height:20px;font-size:12pt;margin-right: 90px;float:right;margin-top:10px;"><br>
+                Ime:<input type="text" name="Ime"style="height:20px;font-size:12pt;float:right;margin-top:10px;margin-right: 90px"> <br>
+                Prezime: <input type="text" name="Prezime"style="height:20px;font-size:12pt;float:right;margin-top:10px;margin-right: 90px"><br>
+                Password:<input type="password" name="Lozinka"style="height:20px;font-size:12pt;float:right;margin-top:10px;margin-right: 90px"> <br>
+                Potvrda : <input type="password" name="PotvrdaLozinka"style="height:20px;font-size:12pt;float:right;margin-top:10px;margin-right: 90px"><br>
+                <div class="brisi">Datum rodjenja: <input type="date" name="Datumrodjenja" style="float:right;margin-top:8px;margin-right: 144px"><br>
+                Pol: <input type="radio" name="pol" value="Muski" style="margin-left:115px;">M &nbsp; <input type="radio" name="pol" value="Zenski">Z<br>
+                Mesto boravka:<select style="float:right;margin-top: 10px;margin-right: 195px">
+                    <option value="Beograd">Beograd</option>
+                    <option value="Novi Sad">Novi Sad</option>
+                    <option value="Niš">Niš</option>
+                    <option value="Kragujevac">Kragujevac</option>
+                    <option value="Subotica">Subotica</option>
+                    <option value="Zrenjanin">Zrenjanin</option>
+                    <option value="Čačak">Čačak</option>
+                    <option value="Kraljevo">Kraljevo</option>
+                    <option value="Smederevo">Smederevo</option>
+                    <option value="Valjevo">Valjevo</option>
+                    <option value="None"></option>
+                </select><br>
+                Potvrdjujem da nisam bot: <input type="checkbox" name="pravila" value="potvrda">
+            </p></div></div>
+            <p id="registracija2">
+                    <button type="button" style="width: 200px; height: 30px; background:lightsteelblue; border-color: rgb(164, 186, 214);">Registruj se</button>
+                </p>
+            </div>
+        <div class="login"><h3 id="registracija2">Login</h3>
+            <hr>
+            <p id="registracija1">
+                    Email: <input type="email" name="Email" style="height:20px;font-size:12pt;float:right;margin-right:10px;margin-top:8px;"><br>
+                    Password: <input type="password" name="Lozinka"style="height:20px;font-size:12pt;float:right;margin-right:10px;margin-top:8px;">
+                    <hr>
+                    <p id="registracija2"><button type="button" style="width: 150px; height: 40px; background:lightsteelblue; border-color: rgb(164, 186, 214);">Login</button><br><br> Zaboravili ste password?<br></p>
+                    <hr>
+                    <br>
+            </p>
+            <h3 id="registracija2">Loginujte se preko:</h3>
+            <h3 id="registracija2">
+                <br>
+                    <a href="#" class="fa fa-twitter"> Twitter</a>
+                    <a href="#" class="fa fa-facebook"> Facebook</a>
+                    <a href="#" class="fa fa-google"> Google+</a>
+                    
+            </h3></div>
+            <div class="prodaja">
+                <div class="proizvod">
+                    <img src="Images/JohnnyCash.jpg" alt="JohnnyCashGitara">
+                    <p>
+                        <h3 id="text123">Replika gitare Johnny Casha</h3>
+                        <p id="text123">Cena: 500000 RSD</p>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="None"></option>
+                        </select>
+                        &nbsp;
+                        <button type="button">Dodaj u korpu</button>
+                        </p>
+                </div>
+                <div class="proizvod">
+                    <img src="Images/standardhp.jpg" alt="StandardHP"><br>
+                    <p>
+                            <h3 id="text123">Gibson Les Paul Standard HP</h3>
+                            <p id="text123">Cena: 260000 RSD </p>
+                            <select>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="None"></option>
+                                </select>
+                                &nbsp;
+                                <button type="button">Dodaj u korpu</button>
+                            </p>
+                    </div>
+                    <div class="proizvod">
+                           
+                            <img src="Images/Mitchell.jpg" alt="Mitchell">
+                            <p>
+                                    <h3 id="text123">Mitchell O120CESB</h3>
+                                    <p id="text123">Cena: 10000 RSD </p>
+                                    <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="None"></option>
+                                        </select>
+                                        &nbsp;
+                                        <button type="button">Dodaj u korpu</button>
+                                </p>
+                        </div>
+                        <div class="proizvod">
+                             
+                                <img src="Images/squieraffinity.jpg" alt="squieraffinity">
+                                <p>
+                                        <h3 id="text123">Squier Affinity Stratocaster</h3>
+                                        <p id="text123">Cena: 24000 RSD </p>
+                                        <select>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="None"></option>
+                                            </select>
+                                            &nbsp;
+                                            <button type="button">Dodaj u korpu</button>
+                                    </p>
+                            </div>
+                            
+                
+            </div>
+            <div class="footer">
+                    Danilo <br>
+                    Lukovic<br>
+                    S7/18<br>
+                    065 92 41 192<br>
+                    Kostolac, Veljka Dugosevica 16<br>
+    
+                    <br>
+                   
+                </div>
+    </div>
+</body>
+</html>

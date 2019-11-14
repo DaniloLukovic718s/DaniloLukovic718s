@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/Kontakt.css">
+
+    <script>
+        $(document).ready(function() {
+            $("#registracija1 input").dblclick(function() {
+                $(this).css('background-image','url("Images/background1.jpg")');
+            });
+            $("#registracija1 input").dblclick(function() {
+                $(this).css("color", "burlywood");
+            });
+            $("#registracija1 textarea").dblclick(function() {
+                $(this).css('background-image','url("Images/background1.jpg")');
+            });
+            $("#registracija1 textarea").dblclick(function() {
+                $(this).css("color", "burlywood");
+            });
+      
+            $("#submit").click(function(){
+                 alert("Vasa poruka je poslata!");
+             });
+        });
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".nav").slideToggle(400);
+            });
+            $(window).resize(function () {
+                 if($(".hamburger").css("display") == "none")
+                 {
+                     $(".nav").css("display","block");
+                 }
+             })
+        })
+     </script>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+            <img src="Images/logo.jpg">
+                    <h1>--No strings attached--</h1>
+        </div>
+        <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="Domaci1.html">Pocetna</a></li>
+                <li><a href="O nama.html">O nama</a></li>
+                <li><a href="#">Kontakt</a></li>
+      
+            </ul>
+        </div>
+        <div class="vesti">
+            <div class="mapa">
+                <div class="mapouter" style="margin-left:95px;"><div class="gmap_canvas"><iframe width="495" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=racunarski%20fakultet&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/private-internet-access-coupon/">pia private internet access review</a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:495px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:495px;}</style></div>
+            </div>
+        </div>
+        <div class="registracija">
+            <h3 id="registracija2">Kontaktirajte nas</h3>
+            <div id="registracija1">Email:<input type="email" name="Email" style="height:20px;font-size:12pt;margin-right: 90px;float:right;margin-top:10px;"><br>
+                 Ime:<input type="text" name="Ime"style="height:20px;font-size:12pt;float:right;margin-top:10px;margin-right: 90px"> <br>
+                Prezime: <input type="text" name="Prezime"style="height:20px;font-size:12pt;float:right;margin-top:10px;margin-right: 90px"><br>
+                <p id="sredina">Naslov poruke: <br><input type="text" name="Naslovporuke"><br></p>
+                Poruka: <br><textarea style="width:90%; height:70px;"></textarea>
+            </div>
+            <p id="registracija2">
+                    <button type="button" style="width: 200px; height: 30px; background:lightsteelblue; border-color: rgb(164, 186, 214);" id="submit">Posaljite poruku</button>
+                </p>
+            </div>
+        <div class="login"><h3 id="registracija2">Login</h3>
+            <hr>
+            <p id="registracija1">
+                    Email: <input type="email" name="Email" style="height:20px;font-size:12pt;float:right;margin-right:10px;margin-top:8px;"><br>
+                    Password: <input type="password" name="Lozinka"style="height:20px;font-size:12pt;float:right;margin-right:10px;margin-top:8px;">
+                    <hr>
+                    <p id="registracija2"><button type="button" style="width: 150px; height: 40px; background:lightsteelblue; border-color: rgb(164, 186, 214);">Login</button><br><br> Zaboravili ste password?<br></p>
+                    <hr>
+                    <br>
+            </p>
+            <h3 id="registracija2">Loginujte se preko:</h3>
+            <h3 id="registracija2">
+                <br>
+                    <a href="#" class="fa fa-twitter"> Twitter</a>
+                    <a href="#" class="fa fa-facebook"> Facebook</a>
+                    <a href="#" class="fa fa-google"> Google+</a>
+                    
+            </h3></div>
+            <div class="footer">
+                    Danilo <br>
+                    Lukovic<br>
+                    S7/18<br>
+                    065 92 41 192<br>
+                    Kostolac, Veljka Dugosevica 16<br>
+    
+                    <br>
+                   
+                </div>
+            
+    </div>
+</body>
+</html>
